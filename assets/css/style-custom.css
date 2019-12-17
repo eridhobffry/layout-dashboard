@@ -1,0 +1,19 @@
+.text-dafault-1 {
+    color: #E0AB23;
+}
+
+.text-dafault-2 {
+    color: #1E3755;
+}
+
+.bg-default-1 {
+    background: #E0AB23;
+}
+
+.bg-default-1 {
+    background: #1E3755;
+}
+
+body {
+    font-family: "Raleway";
+}
