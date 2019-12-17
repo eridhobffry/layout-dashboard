@@ -10,10 +10,71 @@
     background: #E0AB23;
 }
 
-.bg-default-1 {
-    background: #1E3755;
+.bg-default-2 {
+    background: rgb(33, 61, 95);
 }
 
 body {
     font-family: "Raleway";
+}
+
+.divider {
+    width: 80px;
+    height: 5px;
+}
+
+#divider-top {
+    width: 80px;
+    margin-left: 103px;
+}
+
+/* BUTTON */
+
+.btn-default {
+	color: #fff;
+	background-color: #E0AB23;
+	border-color: #E0AB23;
+}
+
+.btn-default:focus, .btn-default.focus, .btn-default:hover, .btn-default:active, .btn-default.active,
+.open > .btn-default.dropdown-toggle {
+	color: #fff;
+	background-color: #E0AB23;
+	border-color: #E0AB23;
+}
+
+.btn-default:active, .btn-default.active,
+.open > .btn-default.dropdown-toggle {
+	-webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle.focus {
+	color: #fff;
+	background-color: rgb(219, 175, 63);
+	border-color: rgb(219, 175, 63);
+}
+
+.btn-default.disabled, .btn-default[disabled],
+fieldset[disabled] .btn-default {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.responsive-tabs .resp-tabs-list li.resp-tab-active {
+    color: rgb(45, 81, 126);
+    font-weight: 600;
+}
+
+.responsive-tabs-classic[data-type="horizontal"] .resp-tabs-list li:before {
+    height: 4px;
+    background-color: rgb(45, 81, 126);
+}
+
+.checkbox-inline .checkbox-custom-dummy:after {
+    content: "\f00c";
+    font-family: 'FontAwesome';
 }
