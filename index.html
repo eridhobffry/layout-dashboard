@@ -50,8 +50,8 @@
                 <div class="responsive-tabs responsive-tabs-classic shell" data-type="horizontal">
             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
               <li>Datei</li>
-              <li>Interface</li>
-              <li>Retourne & Stonierung</li>
+              <li id="trigger-2">Interface</li>
+              <li id="trigger-3">Retourne & Stonierung</li>
             </ul>
             <div class="resp-tabs-container text-left tabs-group-default" data-group="tabs-group-default">
               <div>
@@ -104,7 +104,7 @@
           </div>
           <br>
         <div class="inset-left-50 inset-right-50 inset-xs-left-0 inset-xs-right-0">
-          <button class="btn btn-ellipse btn-default" type="submit">Speichern</button>
+          <button id="next-to-2" class="btn btn-ellipse btn-default" type="">Nächste</button>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@
       </div>
       <div class="cell-lg-4 offset-top-20">
         <div class="form-group">
-          <label class="form-label form-label-outside" for="goName">Goods owner name</label> <br>
+          <label class="form-label form-label-outside" for="goName">Selected warehouse</label> <br>
           <input class="form-control" type="text" value="" data-role="tagsinput" placeholder="  " />
         </div>
       </div>
@@ -188,7 +188,7 @@
           </div>
           <br>
         <div class="inset-left-50 inset-right-50 inset-xs-left-0 inset-xs-right-0">
-          <button class="btn btn-ellipse btn-default" type="submit">Speichern</button>
+          <button id="next-to-3" class="btn btn-ellipse btn-default">Nächste</button>
         </div>
       </div>
     </div>
@@ -196,7 +196,88 @@
                   </div>
               </div>
               <div>
-                <p>Nowadays, almost everyone has a website. Basically, this is a business card that you present every visitor or partner with. So, the better it is designed the more likely you can expect your further cooperation. The content on your website is important as well.</p>
+                <div class="card">
+                    <form>
+                        <div class="range">
+                          <div class="cell-lg-6">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="username">Username</label>
+                              <input class="form-control" value="12" id="username" type="text" name="username">
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20 offset-lg-top-0">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="password">Password</label>
+                              <input class="form-control" value="12" id="password" type="text" name="password">
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="apiType">API Type</label>
+                                <input class="form-control" value="REST" id="apiType" type="text" name="apiType">
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="url">URL</label>
+                                <input class="form-control" value="xxx.myshopify.com/admin" id="url" type="text" name="url">
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="goID">Goods owner ID</label>
+                              <input class="form-control" value="100" id="goID" type="text" name="goID">
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="goName">Goods owner name</label>
+                              <input class="form-control" value="ola" id="goName" type="text" name="goName">
+                            </div>
+                          </div>
+                          <div class="cell-lg-4 offset-top-20">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="dwID">Default warehouse ID</label>
+                              <input class="form-control" value="121212" id="dwID" type="text" name="dwID">
+                            </div>
+                          </div>
+                          <div class="cell-lg-4 offset-top-20">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="goName">Goods owner name</label>
+                              <select class="form-control select-filter" data-placeholder="" data-minimum-results-for-search="Infinity">
+                                  <option>GTIN13</option>
+                                  <option>GTIN14</option>
+                                  <option>GTIN15</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="cell-lg-4 offset-top-20">
+                            <div class="form-group">
+                              <label class="form-label form-label-outside" for="goName">Selected warehouse</label> <br>
+                              <input class="form-control" type="text" value="" data-role="tagsinput" placeholder="  " />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="range range-xs-center range-lg-left offset-top-30">
+                          <div class="cell-xs-5 cell-sm-4 cell-lg-12 text-right">
+                              <div class="inset-xs-right-0 inset-lg-right-20">
+                                <label class="checkbox-inline">
+                                    <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Skip HTTP authorization
+                                  </label>
+                              </div>
+                              <div class="inset-xs-right-0 inset-lg-right-20">
+                                <label class="checkbox-inline">
+                                    <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Deactivate auto article update
+                                  </label>
+                              </div>
+                              <br>
+                            <div class="inset-left-50 inset-right-50 inset-xs-left-0 inset-xs-right-0">
+                              <button class="btn btn-ellipse btn-default" type="submit">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                                      </div>
               </div>
             </div>
           </div>
@@ -210,5 +291,6 @@
     <script src="./assets/js/core.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script-custom.js"></script>
+    <script src="./assets/js/script-extend.js"></script>
   </body>
 </html>
