@@ -78,3 +78,12 @@ fieldset[disabled] .btn-default {
     content: "\f00c";
     font-family: 'FontAwesome';
 }
+
+.yourMark:after {
+    content: "";
+    display: block;
+    width: 7.25rem;
+    height: 6px;
+    margin-top: 1.5rem;
+    background: #E0AB23;
+}
