@@ -1,34 +1,37 @@
-$('#add-return-reason').click(function() {
-    $('.block-reasons:last').before('<div class="block-reasons section-bottom-20">' +
+$('.add').click(function() {
+    console.log(this.getAttribute('data-type'))
+    var data = this.getAttribute('data-type')
+    $('.block-'+data+':last').before('<div class="block-'+data+' section-bottom-20">' +
     '<div class="range">'+
         '<div class="cell-lg-10">'+
-        '<input class="form-control" value="" id="retourneReasons" type="text" name="retourneReasons">'+
+        '<input class="form-control" value="" id="'+data+'" type="text" name="'+data+'">'+
         '</div>'+
         '<div class="cell-lg-2 text-left">'+
-        '<span class="remove"><i class="fa fa-trash text-red"></i></span>'+
+        '<span class="remove-'+data+'"><i class="fa fa-trash text-red"></i></span>'+
         '</div>'+
     '</div>'+
     '</div>');
-});
-$('.optionBox-reason').on('click','.remove',function() {
- 	$(this).parent().parent().parent().remove();
+    $('.optionBox-'+data+'').on('click','.remove-'+data+'',function() {
+        $(this).parent().parent().parent().remove();
+   });
 });
 
-$('#add-return-condition').click(function() {
-    $('.block-conditions:last').before('<div class="block-conditions section-bottom-20">' +
-    '<div class="range">'+
-        '<div class="cell-lg-10">'+
-        '<input class="form-control" value="" id="retourneConditions" type="text" name="retourneConditions">'+
-        '</div>'+
-        '<div class="cell-lg-2 text-left">'+
-        '<span class="remove-condition"><i class="fa fa-trash text-red"></i></span>'+
-        '</div>'+
-    '</div>'+
-    '</div>');
-});
-$('.optionBox-condition').on('click','.remove-condition',function() {
- 	$(this).parent().parent().parent().remove();
-});
+
+// $('#add-return-condition').click(function() {
+//     $('.block-conditions:last').before('<div class="block-conditions section-bottom-20">' +
+//     '<div class="range">'+
+//         '<div class="cell-lg-10">'+
+//         '<input class="form-control" value="" id="retourneConditions" type="text" name="retourneConditions">'+
+//         '</div>'+
+//         '<div class="cell-lg-2 text-left">'+
+//         '<span class="remove-condition"><i class="fa fa-trash text-red"></i></span>'+
+//         '</div>'+
+//     '</div>'+
+//     '</div>');
+// });
+// $('.optionBox-condition').on('click','.remove-condition',function() {
+//  	$(this).parent().parent().parent().remove();
+// });
 
 $('#add-return-job').click(function() {
     $('.block-jobs:last').before('<div class="block-jobs section-bottom-20">' +

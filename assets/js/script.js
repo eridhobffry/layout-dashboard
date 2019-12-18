@@ -1716,7 +1716,7 @@ $document.ready(function () {
 	if (isDesktop) {
 		$().UItoTop({
 			easingType: 'easeOutQuart',
-			containerClass: 'ui-to-top icon icon-xs icon-circle icon-darker-filled mdi mdi-chevron-up'
+			containerClass: 'ui-to-top icon icon-xs icon-circle icon-darker-filled fa fa-chevron-up'
 		});
 	}
 

@@ -208,8 +208,8 @@
                             <div class="form-group">
                                 <label class="form-label form-label-outside" for="name">Retourn reasons</label>
                                 <div class="optionBox-reason">
-                                    <div class="block-reasons">
-                                        <a id="add-return-reason" class="btn btn-ellipse btn-default2">
+                                    <div class="block-reason">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="reason">
                                             <i class="fa fa-plus">
                                             </i>
                                         </a>
@@ -221,8 +221,8 @@
                            <div class="form-group">
                             <label class="form-label form-label-outside" for="name">Retourn conditions</label>
                             <div class="optionBox-condition">
-                                <div class="block-conditions">
-                                    <a id="add-return-condition" class="btn btn-ellipse btn-default2">
+                                <div class="block-condition">
+                                    <a id="" class="add btn btn-ellipse btn-default2" data-type="condition">
                                         <i class="fa fa-plus">
                                         </i>
                                     </a>
@@ -243,8 +243,8 @@
                             <div class="form-group">
                                 <label class="form-label form-label-outside" for="name">Übergabe des Auftrags an ODC</label>
                                 <div class="optionBox-job">
-                                    <div class="block-jobs">
-                                        <a id="add-return-job" class="btn btn-ellipse btn-default2">
+                                    <div class="block-job">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="job">
                                             <i class="fa fa-plus">
                                             </i>
                                         </a>
@@ -253,25 +253,92 @@
                             </div>
                           </div>
                           <div class="cell-lg-6 offset-top-20">
-                            
-                          </div>
-                          <div class="cell-lg-4 offset-top-20">
-                            
-                          </div>
-                          <div class="cell-lg-4 offset-top-20">
                             <div class="form-group">
-                              <label class="form-label form-label-outside" for="goName">Goods owner name</label>
-                              <select class="form-control select-filter" data-placeholder="" data-minimum-results-for-search="Infinity">
-                                  <option>GTIN13</option>
-                                  <option>GTIN14</option>
-                                  <option>GTIN15</option>
-                              </select>
+                                <label class="form-label form-label-outside" for="name">Importierter Auftrag ist nicht valid</label>
+                                <div class="optionBox-notValid">
+                                    <div class="block-notValid">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="notValid">
+                                            <i class="fa fa-plus">
+                                            </i>
+                                        </a>
+                                      </div>
+                                  </div>
                             </div>
                           </div>
-                          <div class="cell-lg-4 offset-top-20">
-                            
+                          <div class="cell-lg-6 offset-top-20 ">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="name">Importierter Auftrag ist valid und wird voon ODC bearbeitet</label>
+                                <div class="optionBox-valid">
+                                    <div class="block-valid section-bottom-20">
+                                        <div class="range">
+                                            <div class="cell-lg-10">
+                                            <input class="form-control" value="5.1" id="valid" type="text" name="valid">
+                                            </div>
+                                            <div class="cell-lg-2 text-left">
+                                            <span class="remove-valid"><i class="fa fa-trash text-red"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-valid section-bottom-20">
+                                        <div class="range">
+                                            <div class="cell-lg-10">
+                                                <input class="form-control" value="6.8" id="valid" type="text" name="valid">
+                                            </div>
+                                            <div class="cell-lg-2 text-left">
+                                                <span class="remove-valid"><i class="fa fa-trash text-red"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-valid">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="valid">
+                                            <i class="fa fa-plus">
+                                            </i>
+                                        </a>
+                                      </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="name">Auftrag versendet</label>
+                                <div class="optionBox-sent">
+                                    <div class="block-sent">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="sent">
+                                            <i class="fa fa-plus">
+                                            </i>
+                                        </a>
+                                      </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cell-lg-6">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="name">Übergabe der Stornierung an ODC</label>
+                                <div class="optionBox-cancelDelivery">
+                                    <div class="block-cancelDelivery">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="cancelDelivery">
+                                            <i class="fa fa-plus">
+                                            </i>
+                                        </a>
+                                      </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cell-lg-6 offset-top-20">
+                            <div class="form-group">
+                                <label class="form-label form-label-outside" for="name">Stornierung von ODC bearbeitet</label>
+                                <div class="optionBox-cancelProcessing">
+                                    <div class="block-cancelProcessing">
+                                        <a id="" class="add btn btn-ellipse btn-default2" data-type="cancelProcessing">
+                                            <i class="fa fa-plus">
+                                            </i>
+                                        </a>
+                                      </div>
+                                  </div>
+                            </div>
                           </div>
                         </div>
+                        <hr>
                         <div class="range">
                             <div class="cell-lg-6 offset-top-20">
                                 <div class="form-group">
@@ -299,17 +366,23 @@
                                       </div>
                                 </div>
                               </div>
+                              <div class="cell-xs-12 cell-sm-4 cell-lg-6 text-right offset-top-20 section-top-41">
+                                <div class="inset-xs-right-0 inset-lg-right-20">
+                                  <label class="checkbox-inline">
+                                      <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Retourenlabel immen in Paket belegen
+                                    </label>
+                                </div>
+                                <br>
+                              <div class="inset-left-50 inset-right-50 inset-xs-left-0 inset-xs-right-0">
+                                <button class="btn btn-ellipse btn-default" type="submit">Submit</button>
+                              </div>
+                            </div>
                           </div>
-                        <div class="range range-xs-center range-lg-left offset-top-30">
+                        <!-- <div class="range range-xs-center range-lg-left offset-top-30">
                           <div class="cell-xs-5 cell-sm-4 cell-lg-12 text-right">
                               <div class="inset-xs-right-0 inset-lg-right-20">
                                 <label class="checkbox-inline">
-                                    <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Skip HTTP authorization
-                                  </label>
-                              </div>
-                              <div class="inset-xs-right-0 inset-lg-right-20">
-                                <label class="checkbox-inline">
-                                    <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Deactivate auto article update
+                                    <input class="checkbox-custom" name="input-group-radio" value="" type="checkbox">Retourenlabel immen in Paket belegen
                                   </label>
                               </div>
                               <br>
@@ -317,7 +390,7 @@
                               <button class="btn btn-ellipse btn-default" type="submit">Submit</button>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                       </form>
                                       </div>
               </div>
