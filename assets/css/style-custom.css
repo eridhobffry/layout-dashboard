@@ -64,6 +64,24 @@ fieldset[disabled] .btn-default {
 	opacity: .5;
 }
 
+.btn-default2 {
+    color: #fff;
+    background-color: #1E3755;
+    border-color: #1E3755;
+}
+
+.btn-default2:hover {
+    color: #fff;
+}
+
+.position-center {
+    position: absolute;
+    top: 40%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .responsive-tabs .resp-tabs-list li.resp-tab-active {
     color: rgb(45, 81, 126);
     font-weight: 600;

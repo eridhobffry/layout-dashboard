@@ -1,8 +1,17 @@
 $('#add-return-reason').click(function() {
-    $('.block-reasons:last').before('<div class="block-reasons"><input class="form-control" value="" id="" type="text" name="returnReason"> <span class="remove"><i class="fa fa-trash text-red"></i></span></div>');
+    $('.block-reasons:last').before('<div class="block-reasons section-bottom-20">' +
+    '<div class="range">'+
+        '<div class="cell-lg-10">'+
+        '<input class="form-control" value="" id="retourneReasons" type="text" name="retourneReasons">'+
+        '</div>'+
+        '<div class="cell-lg-2 text-left">'+
+        '<span class="remove"><i class="fa fa-trash text-red"></i></span>'+
+        '</div>'+
+    '</div>'+
+    '</div>');
 });
 $('.optionBox-reason').on('click','.remove',function() {
- 	$(this).parent().remove();
+ 	$(this).parent().parent().parent().remove();
 });
 
 $( "#next-to-2" ).click(function() {
