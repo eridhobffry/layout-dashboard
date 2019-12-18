@@ -30,6 +30,22 @@ $('.optionBox-condition').on('click','.remove-condition',function() {
  	$(this).parent().parent().parent().remove();
 });
 
+$('#add-return-job').click(function() {
+    $('.block-jobs:last').before('<div class="block-jobs section-bottom-20">' +
+    '<div class="range">'+
+        '<div class="cell-lg-10">'+
+        '<input class="form-control" value="" id="jobs" type="text" name="jobs">'+
+        '</div>'+
+        '<div class="cell-lg-2 text-left">'+
+        '<span class="remove-job"><i class="fa fa-trash text-red"></i></span>'+
+        '</div>'+
+    '</div>'+
+    '</div>');
+});
+$('.optionBox-job').on('click','.remove-job',function() {
+ 	$(this).parent().parent().parent().remove();
+});
+
 
 $('#add-return-mapping').click(function() {
     $('.block-mapping:last').before('<div class="block-mapping section-bottom-20">' +
