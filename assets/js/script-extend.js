@@ -7,7 +7,7 @@ $('.add').click(function() {
         '<input class="form-control" value="" id="'+data+'" type="text" name="'+data+'">'+
         '</div>'+
         '<div class="cell-lg-2 text-left">'+
-        '<span class="remove-'+data+'"><i class="fa fa-trash text-red"></i></span>'+
+        '<span class="remove-'+data+'" data-type="'+data+'"><i class="fa fa-trash text-red"></i></span>'+
         '</div>'+
     '</div>'+
     '</div>');
@@ -15,40 +15,6 @@ $('.add').click(function() {
         $(this).parent().parent().parent().remove();
    });
 });
-
-
-// $('#add-return-condition').click(function() {
-//     $('.block-conditions:last').before('<div class="block-conditions section-bottom-20">' +
-//     '<div class="range">'+
-//         '<div class="cell-lg-10">'+
-//         '<input class="form-control" value="" id="retourneConditions" type="text" name="retourneConditions">'+
-//         '</div>'+
-//         '<div class="cell-lg-2 text-left">'+
-//         '<span class="remove-condition"><i class="fa fa-trash text-red"></i></span>'+
-//         '</div>'+
-//     '</div>'+
-//     '</div>');
-// });
-// $('.optionBox-condition').on('click','.remove-condition',function() {
-//  	$(this).parent().parent().parent().remove();
-// });
-
-$('#add-return-job').click(function() {
-    $('.block-jobs:last').before('<div class="block-jobs section-bottom-20">' +
-    '<div class="range">'+
-        '<div class="cell-lg-10">'+
-        '<input class="form-control" value="" id="jobs" type="text" name="jobs">'+
-        '</div>'+
-        '<div class="cell-lg-2 text-left">'+
-        '<span class="remove-job"><i class="fa fa-trash text-red"></i></span>'+
-        '</div>'+
-    '</div>'+
-    '</div>');
-});
-$('.optionBox-job').on('click','.remove-job',function() {
- 	$(this).parent().parent().parent().remove();
-});
-
 
 $('#add-return-mapping').click(function() {
     $('.block-mapping:last').before('<div class="block-mapping section-bottom-20">' +
