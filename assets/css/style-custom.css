@@ -107,7 +107,7 @@ fieldset[disabled] .btn-default {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
   transition: 0.3s;
   width: 100%;
   padding: 20px;
@@ -197,4 +197,14 @@ fieldset[disabled] .btn-default {
   .line-bottom {
       padding-bottom: 20px;
       border-bottom: 1px solid gray;
+  }
+
+  .responsive-tabs .resp-accordion .resp-arrow:before {
+    content: "\f078";
+    font-family: "fontAwesome";
+  }
+
+  .responsive-tabs .resp-accordion.resp-tab-active .resp-arrow:before {
+    content: "\f077";
+    font-family: "fontAwesome";
   }

@@ -9760,6 +9760,26 @@ html.lt-ie-10 .range > [class*="cell-lg-preffix-"] {
 		white-space: normal;
 	}
 }
+@media (min-width: 375px) {
+	.text-xxs-left {
+		text-align: left;
+	}
+	.text-xxs-center {
+		text-align: center;
+	}
+	.text-xxs-right {
+		text-align: right;
+	}
+	.text-xxs-justify {
+		text-align: justify;
+	}
+	.text-xxs-nowrap {
+		white-space: nowrap;
+	}
+	.text-xxs-normal {
+		white-space: normal;
+	}
+}
 
 @media (min-width: 768px) {
 	.text-sm-left {
@@ -13969,7 +13989,7 @@ html.lt-ie11 .btn-santos-svg:hover {
 	padding-bottom: 350px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 	.section-xs-0 {
 		padding-top: 0;
 		padding-bottom: 0;
